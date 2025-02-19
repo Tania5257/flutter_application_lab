@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
- 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,21 +26,20 @@ class MyApp extends StatelessWidget {
                 color: Colors.yellow,
                 size: 60,
               ),
+              
+            
+              
               Icon(
                 Icons.star,
                 color: Colors.grey,
                 size: 60,
               ),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
+              Image(
+                image: AssetImage("asset/abc.png"),
+                width: 100,
+                height: 100,
               ),
-              Icon(
-                Icons.star,
-                color: Colors.grey,
-                size: 60,
-              ),
+              Icon(Icons.star, color: Colors.amber, size: 60),
               Icon(
                 Icons.star,
                 color: Colors.yellow,
