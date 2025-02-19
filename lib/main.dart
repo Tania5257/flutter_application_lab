@@ -16,36 +16,23 @@ class MyApp extends StatelessWidget {
           title: Text("Flutter UI"),
         ),
         body: Container(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
+          // height: double.infinity,
+          width: double.infinity,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+           
+            children: List.generate(
+              100,
+              (index) => Icon(
+                Icons.radar,
+                color: Colors.blue,
+                size: index.toDouble(),
               ),
-              
-            
-              
-              Icon(
-                Icons.star,
-                color: Colors.grey,
-                size: 60,
-              ),
-              Image(
-                image: AssetImage("asset/abc.png"),
-                width: 100,
-                height: 100,
-              ),
-              Icon(Icons.star, color: Colors.amber, size: 60),
-              Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 60,
-              ),
-            ],
+            ), 
+            ) 
           ),
         ),
       ),
